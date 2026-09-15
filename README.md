@@ -32,6 +32,6 @@ This project was built as **Project 3** in my 1st year B.tech programming journe
 
 ##  Live Server
 
-[Open Currency Converter]()
+[Open Currency Converter]( https://krishnawsh4-star.github.io/currency-converter/)
 
 
