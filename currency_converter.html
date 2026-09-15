@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="currency_converter.css">
+</head>
+<body>
+    <h1>CURRENCY CONVERTER</h1>
+    <main>
+        <div class="container">
+            <div class="amount" id="amount">
+                Enter Amount:<input type="text">
+            </div>
+            <div class="from_box" >
+                From:<select id="from" required>please specify
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="KWD">KWD</option>
+                    <option value="BHD">BHD</option>
+                    <option value="OMR">OMR</option>
+                    <option value="JOD">JOD</option>
+                    <option value="GIP">GIP</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="KYD">KYD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="SGD">SGD</option>
+                    <option value="EUR">JPY</option>
+                    <option value="AUD">CNY</option>
+            </select>
+            </div>
+            <div class="to" >
+                To:<select id="to" required>please specify
+                   <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="KWD">KWD</option>
+                    <option value="BHD">BHD</option>
+                    <option value="OMR">OMR</option>
+                    <option value="JOD">JOD</option>
+                    <option value="GIP">GIP</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="KYD">KYD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="SGD">SGD</option>
+                    <option value="EUR">JPY</option>
+                    <option value="AUD">CNY</option>
+            </select>
+            </div>
+            <div class="submit">
+                <button type="submit">Get Exchanged Value</button>
+            </div>
+            <div class="answer" id="answer"></div>
+        </div>
+    </main>
+    <script src="currency_converter.js"></script>
+</body>
+</html>

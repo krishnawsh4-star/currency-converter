@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0, 140, 255, 0.12), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(120, 0, 255, 0.10), transparent 30%),
+        #050505;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+}
+
+
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.25),
+        0 0 30px rgba(0, 140, 255, 0.15);
+}
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+
+    padding: 38px;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(0, 140, 255, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.7),
+        0 0 45px rgba(0, 140, 255, 0.13);
+}
+
+
+
+.amount {
+    color: #bdbdbd;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.amount input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    color: white;
+
+    font-size: 17px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.amount input::placeholder {
+    color: #777;
+}
+
+.amount input:focus {
+    border-color: rgba(0, 150, 255, 0.7);
+
+    box-shadow:
+        0 0 0 3px rgba(0, 150, 255, 0.08),
+        0 0 18px rgba(0, 150, 255, 0.12);
+}
+
+
+/* CURRENCY SELECT AREA */
+
+.from_box,
+.to {
+    color: #bdbdbd;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+select:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+select:focus {
+    border-color: rgba(0, 150, 255, 0.7);
+
+    box-shadow:
+        0 0 0 3px rgba(0, 150, 255, 0.08),
+        0 0 18px rgba(0, 150, 255, 0.12);
+}
+
+
+/* DROPDOWN OPTIONS */
+
+select option {
+    background: #111;
+    color: white;
+}
+
+
+/* BUTTON */
+
+.submit {
+    margin-top: 8px;
+}
+
+.submit button {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #dcdcdc
+    );
+
+    color: #050505;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.submit button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.45),
+        0 0 20px rgba(255, 255, 255, 0.12);
+}
+
+.submit button:active {
+    transform: translateY(0);
+}
+
+
+/* ANSWER */
+
+.answer {
+    min-height: 55px;
+
+    margin-top: 25px;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(0, 140, 255, 0.06);
+
+    border: 1px solid rgba(0, 140, 255, 0.16);
+
+    border-radius: 12px;
+
+    color: #e9e9e9;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    transition: 0.3s ease;
+}
+
+/* for mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 35px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px;
+        border-radius: 18px;
+    }
+}
