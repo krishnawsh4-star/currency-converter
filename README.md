@@ -28,4 +28,10 @@ The application fetches the latest available exchange rate from the API and calc
 
 Completed ✅
 
-This project was built as **Project 3** in my programming journey to practice JavaScript, APIs, JSON, `fetch()`, and `async/await`.
+This project was built as **Project 3** in my 1st year B.tech programming journey.
+
+##  Live Server
+
+[Open Currency Converter]()
+
+
